@@ -8,4 +8,7 @@ public interface EmployeeService {
 
 	public List<Employee> findAll();
 	public void save(Employee employee);
+	public Employee findById(int theId);
+	public void deleteById(int theId);
+	public List<Employee> searchBy(String theFirstName, String theLastName);
 }

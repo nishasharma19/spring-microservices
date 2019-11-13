@@ -15,6 +15,7 @@
 
 		<form action="#" th:action="@{/employees/save}"
 			th:object="${employee}" method="post">
+			<input type="hidden" th:field= "*{id}">
 			<div class="form-group row">
 				<div class="col-5">
 					<input type="text" th:field="*{firstName}" placeholder="First Name"

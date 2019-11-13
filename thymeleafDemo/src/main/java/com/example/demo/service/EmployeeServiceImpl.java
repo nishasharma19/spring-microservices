@@ -22,4 +22,12 @@ public class EmployeeServiceImpl implements EmployeeService {
 		return employeeRepo.findAll();
 	}
 
+
+
+	@Override
+	public void save(Employee employee) {
+		// TODO Auto-generated method stub
+		 employeeRepo.save(employee);
+	}
+
 }
